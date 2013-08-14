@@ -10,7 +10,7 @@ import org.apache.commons.cli.ParseException;
 import org.apache.commons.cli.PosixParser;
 import org.jeromq.ZMQ;
 
-public class GATEServerZMQ {
+public class TextAServerZMQ {
 
 	private ZMQ.Context zeroMqContext;
 	private ZMQ.Socket socket;
@@ -18,7 +18,7 @@ public class GATEServerZMQ {
 	private static GATEWrapper gate;
 	private String url;
 
-	public GATEServerZMQ(String home, String port) {
+	public TextAServerZMQ(String home, String port) {
 
 		try {
 			/*
@@ -145,7 +145,7 @@ public class GATEServerZMQ {
 			
 			}
 			
-			GATEServerZMQ server = new GATEServerZMQ(home, port);
+			TextAServerZMQ server = new TextAServerZMQ(home, port);
 			server.run();
 			
 		} catch(ParseException e) {

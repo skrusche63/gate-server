@@ -14,7 +14,7 @@ import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
 import org.apache.commons.cli.PosixParser;
 
-public class GATEServer {
+public class TextAServer {
 
 	private ServerSocket serverSocket;
 	
@@ -23,7 +23,7 @@ public class GATEServer {
 
 	private static GATEWrapper gate;
 	
-	public GATEServer(String home, int port) {
+	public TextAServer(String home, int port) {
 
 		try {
 			/*
@@ -208,7 +208,7 @@ public class GATEServer {
 			
 			}
 			
-			GATEServer server = new GATEServer(home, Integer.valueOf(port));
+			TextAServer server = new TextAServer(home, Integer.valueOf(port));
 			server.run();
 			
 		} catch(ParseException e) {
